@@ -4,9 +4,7 @@
 
 ---
 
-## Dashboard Preview
-
-![Sales Performance Analysis Dashboard](dashboard_screenshot.png)
+<img width="1353" height="673" alt="Screenshot 2026-06-11 at 02 40 37" src="https://github.com/user-attachments/assets/1d03bc96-57a6-4fca-b2db-8ac0321a4ab6" />
 
 ---
 
