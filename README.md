@@ -1,129 +1,119 @@
-# 📊 Sales Performance Analysis Dashboard using Power BI
+# Sales Performance Analysis Dashboard — Power BI
 
-> *"Behind every number, there's a decision waiting to be made."*
-
-<img width="1353" height="673" alt="Screenshot 2026-06-11 at 02 40 37" src="https://github.com/user-attachments/assets/00c75b32-bc60-4c04-92a4-c6d17d47af60" />
-
+> Interactive Power BI dashboard analyzing $6.2M in sales across 3 product categories, 6 US states, and 5 payment methods — featuring KPI cards, trend analysis, geospatial mapping, and dynamic filters for drill-down business insights.
 
 ---
 
-## 📌 Overview
+## Dashboard Preview
 
-I started this project with nothing but a raw CSV file and one question —
-**"What is this data actually trying to tell me?"**
-
-After cleaning, transforming, and visualizing the data in Power BI,
-the answer turned out to be far more interesting than I expected.
-
-This dashboard gives a full 360° view of sales performance —
-from revenue trends to regional breakdowns to product profitability.
+![Sales Performance Analysis Dashboard](dashboard_screenshot.png)
 
 ---
 
-## 📊 Key Metrics at a Glance
+## Project Overview
 
-| Metric | Value |
-|--------|-------|
-| 💰 Total Sales | $6.2M |
-| 📈 Total Profit | $1.6M |
-| 🛒 Total Orders | 1,194 |
-| 📦 Units Sold | 13K |
-| 📅 Time Period | 2020 – 2025 |
-| 📍 States Covered | 5+ US States |
+This project presents a fully interactive **Sales Performance Analysis Dashboard** built in Microsoft Power BI. It analyzes 1,194 sales transactions across 6 US states from 2020 to 2025, covering 3 product categories (Electronics, Furniture, Office Supplies) and 12 sub-categories.
+
+The dashboard enables business stakeholders to monitor sales KPIs, identify top-performing products and regions, track revenue trends over time, and compare profitability across categories — all through interactive slicers and dynamic visuals.
+
+**Tools & Technologies:** Microsoft Power BI · DAX · Power Query · Data Modeling
 
 ---
 
-## 🔍 Key Findings
+## Dataset
 
-**1️⃣ Sales Trend**
-- Peaked at **$1.5M in 2022**
-- Gradually declined toward **$0.2M in 2025**
-- Raises the question — *why did growth slow down?*
-
-**2️⃣ Category Performance**
-- **Office Supplies** leads in profit — the quiet MVP
-- Electronics & Furniture follow closely in units sold
-
-**3️⃣ Regional Insights**
-- **California & New York** dominate total revenue
-- **Florida** is silently closing the gap
-
-**4️⃣ Payment Behavior**
-- **Credit Card** is the #1 preferred payment method
-- COD still holds a surprisingly strong share
-
-**5️⃣ Top Products**
-- A small group of products drive the majority of profit
-- Clear signal for where a business should focus next
+| Field | Details |
+|---|---|
+| Records | 1,194 transactions |
+| Time period | March 2020 – March 2025 |
+| Categories | Electronics, Furniture, Office Supplies |
+| Sub-categories | 12 (Laptops, Phones, Chairs, Tables, Printers, Markers, Paper, etc.) |
+| States | California, Florida, Illinois, New York, Ohio, Texas |
+| Cities | Orlando, San Francisco, Buffalo, Rochester, Dallas, Miami, Springfield, Chicago + more |
+| Payment modes | Credit Card, Debit Card, UPI, COD, EMI |
+| Key fields | Order ID, Amount, Profit, Quantity, Category, Sub-Category, PaymentMode, State, City, Order Date |
 
 ---
 
-## 📂 Dashboard Features
+## Key Metrics (Dashboard Summary)
 
-| Feature | Description |
-|---------|-------------|
-| 📅 Sales Trend | Year-by-year revenue from 2020–2025 |
-| 🏆 Category Analysis | Sales & profit by product category |
-| 📍 State & City View | Regional performance breakdown |
-| 💳 Payment Mode | Distribution across all payment types |
-| 🛍️ Top Products | Most profitable sub-categories |
-| 🗺️ Sales Map | Geographic view across US states |
-| 📊 KPI Cards | Total Sales, Profit, Orders, Units |
+| KPI | Value |
+|---|---|
+| Total Sales | $6.2M |
+| Total Profit | $1.6M |
+| Total Orders | 1,194 |
+| Units Sold | 13K |
 
 ---
 
-## 🛠️ Tools & Technologies
+## Dashboard Features
 
-| Tool | Purpose |
-|------|---------|
-| Power BI Desktop | Dashboard building & visualization |
-| Power Query | Data cleaning & transformation |
-| DAX | Custom measures & calculated KPIs |
-| CSV Dataset | Raw data source |
+### KPI Cards
+- Total Sales, Total Profit, Total Orders, Units Sold — displayed as headline metrics at the top
 
----
+### Interactive Filters (Slicers)
+- Filter by **State**, **Year-Month**, **Payment Mode**, and **Category**
+- All visuals update dynamically based on slicer selections
 
-## 📁 Project Structure
-📁 Sales-Performance-Analysis-Dashboard
-├── 📊 Sales_Dashboard.pbix       → Main Power BI file
-├── 📁 Sales_Dataset.csv          → Raw dataset
-├── 🖼️ dashboard_screenshot.png   → Dashboard preview
-└── 📄 README.md                  → Project documentation
-
----
-
-## 🚀 Getting Started
-
-```bash
-# Step 1 — Clone the repository
-git clone https://github.com/Mahmudul-Hasan-24/Sales-Performance-Analysis-Dashboard-using-Power-BI.git
-
-# Step 2 — Open in Power BI web version
-Open Sales_Dashboard.pbix
-
-# Step 3 — Explore & Interact
-Use filters to explore states, categories, payment modes & more
+### Visualizations
+- **Sales Trend by Year** — area chart showing revenue from 2020–2025 with peak in 2022 ($1.5M)
+- **Profit by Category** — bar chart comparing Office Supplies, Furniture, and Electronics
+- **Units Sold by Category** — donut chart (Electronics 34.85%, Office Supplies 33.41%, Furniture 31.75%)
+- **Sales by Category** — horizontal bar chart comparing total revenue per category
+- **Sales by City** — bar chart ranking top cities by sales volume
+- **State-wise Sales** — interactive US choropleth map showing geographic sales distribution
+- **State Performance** — scatter plot comparing profit vs. sales across California, Florida, Illinois, New York
+- **Profit by State** — bar chart ranking Florida, New York, California, Texas, Illinois, Ohio
+- **Sales by Payment Mode** — donut chart (Credit Card 22.56%, Debit Card 20.23%, UPI 20%, COD, EMI)
+- **Top Profitable Products** — bar chart ranking sub-categories by profitability (Markers, Tables, Paper, Electronics top performers)
 
 ---
 
-## 🎯 Who Is This For?
+## Key Insights
 
-This dashboard is built for anyone who wants to turn raw sales data
-into real business decisions —
-
-- 📊 **Data Analysts** — looking for a clean BI project reference
-- 💼 **Business Managers** — needing quick sales insights
-- 🚀 **Entrepreneurs** — wanting to understand their revenue patterns
-- 🎓 **Students** — learning Power BI with a real-world dataset
+- **2022 was the peak sales year** at $1.5M — revenue declined to $0.2M in 2025, suggesting a market shift worth investigating
+- **Electronics leads in units sold** (34.85%) but Office Supplies and Furniture are close — well-balanced category mix
+- **Florida and New York lead in profit** — California has high sales but relatively lower profit margins
+- **Markers and Tables are the most profitable sub-categories** — ahead of higher-ticket items like Laptops and Phones
+- **Credit Card is the most used payment method** (22.56%), but payment mode distribution is fairly even across all 5 methods
+- **State performance scatter plot** shows New York and California outliers in high-sales territory
 
 ---
 
-## 🙋‍♂️ About the Author
+## Repository Structure
+
+```
+├── Sales_Performance_Analysis_Dashboard.pbix    # Power BI dashboard file
+├── Sales_Dataset.csv                            # Raw dataset (1,194 rows × 12 columns)
+├── dashboard_screenshot.png                     # Dashboard preview image
+└── README.md
+```
+
+---
+
+## How to Open
+
+1. Download and install [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) (free)
+2. Clone or download this repository
+3. Open `Sales_Performance_Analysis_Dashboard.pbix` in Power BI Desktop
+4. The dashboard loads with all visuals and slicers fully interactive
+
+---
+
+## Skills Demonstrated
+
+- Power BI dashboard design and layout (KPI cards, slicers, multi-visual layout)
+- DAX measures for KPI calculations (Total Sales, Total Profit, Units Sold)
+- Power Query for data transformation and Year-Month feature engineering
+- Geospatial visualization (US choropleth map by state)
+- Multi-dimensional analysis (category, geography, time, payment method)
+- Business storytelling through data visualization
+
+---
+
+## Author
 
 **Mahmudul Hasan**
-A data enthusiast who believes every dataset has a story worth telling.
-This project is one of those stories.
-
-- 🐙 GitHub → [@Mahmudul-Hasan-24](https://github.com/Mahmudul-Hasan-24)
-- 💼 LinkedIn → [https://www.linkedin.com/in/mahmudul-hasan-764307249/]
-
+M.Sc. Computational Social Systems (Business Analytics)
+Technical University of Graz & University of Graz
+[LinkedIn](https://www.linkedin.com/in/mahmudul-hasan-764307249/) · [GitHub](https://github.com/Mahmudul-Hasan-24)
